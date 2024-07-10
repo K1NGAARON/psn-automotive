@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+         
+:root {
+    --primary: #a60000;
+    --black: #000000;
+    --white: #ffffff;
+    --fontFamily: 'Poppins', sans-serif;
+    --transition: all .25s ease-in-out
+}
+
+* {
+    font-family: var(--fontFamily);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--fontFamily);
+    font-weight: 700;
+}
+
+a,
+li,
+p {
+    font-family: var(--fontFamily);
+}
+
+p,
+ul,
+ol {
+	font-size: 16px;
+}
+
+li::marker {
+	color: var(--primary);
+}
+
+.menu-item {
+    opacity: 0.6;
+    transition: var(--transition);
+}
+
+.menu-item:hover {
+    opacity: 1;
+    transition: var(--transition);
+}
+
+.menu-item.current-menu-item {
+    opacity: 1;
+}
+
+.footer .c_widget {
+    width: 100%;
+}
+
+.footer .c_widget .menu > li > a,
+.footer p,
+.footer a,
+.footer .copyright a,
+.copyright a {
+    color: var(--black);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.footer .custom-footer {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.wp-container-core-columns-is-layout-1.wp-container-core-columns-is-layout-1 {
+	justify-content: flex-end;
+}
+
+.footer .custom-footer .wp-block-column {
+	flex: 1 0;
+}
+
+.wp-container-core-columns-is-layout-1.wp-container-core-columns-is-layout-1 .wp-block-column:nth-of-type(1) {
+	margin-right: auto;
+}
+
+.footer .custom-footer .wp-block-column:nth-of-type(2) {
+	flex: 2 0;
+}
+
+.footer .is-layout-flex {
+	align-items: flex-start;
+}
+
+.footer .widget_nav_menu li {
+	padding: 0;
+}
+
+.footer .c_widget .page_item a {
+	line-height: unset;
+}
