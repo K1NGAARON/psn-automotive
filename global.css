@@ -35,7 +35,12 @@ li::marker {
 	color: var(--primary);
 }
 
+.header {
+    background-color: var(--white);
+}
+
 .menu-item {
+    font-weight: 700;
     opacity: 0.6;
     transition: var(--transition);
 }
@@ -49,6 +54,21 @@ li::marker {
     opacity: 1;
 }
 
+.elementor-widget-button .elementor-button {
+    font-weight: 700;
+    background-color: var(--primary);
+    transition: var(--transition);
+}
+
+.elementor-widget-button .elementor-button:hover {
+    transform: scale(1.02);
+    transition: var(--transition);
+}
+
+footer.footer {
+    background-color: var(--black);
+}
+
 .footer .c_widget {
     width: 100%;
 }
@@ -58,9 +78,13 @@ li::marker {
 .footer a,
 .footer .copyright a,
 .copyright a {
-    color: var(--black);
+    color: var(--white);
     font-weight: 400;
     font-size: 14px;
+}
+
+.footer a:hover {
+    cursor: pointer;
 }
 
 .footer .custom-footer {
