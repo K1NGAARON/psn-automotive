@@ -130,6 +130,54 @@ li::marker {
     transform: scale(1.02);
 }
 
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+.form-row .form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-item .form-row {
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.form-item input {
+    flex: unset;
+    width: unset;
+    height: unset;
+}
+
+.form-row label,
+.form-row input,
+.form-row select {
+    font-size: 16px;
+}
+
+.form-heading {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+.form-row label {
+    font-weight: 700;
+}
+
+.form-item label {
+    font-weight: 400;
+}
+
 footer.footer {
     background-color: var(--black);
 }
